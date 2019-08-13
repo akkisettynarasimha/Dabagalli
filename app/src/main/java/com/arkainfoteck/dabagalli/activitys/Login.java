@@ -77,12 +77,10 @@ public class Login extends AppCompatActivity {
 
             }
         });
-
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
+                Toast.makeText(Login.this, "haii", Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(getApplicationContext(),Registraction.class);
                 startActivity(intent);
             }
