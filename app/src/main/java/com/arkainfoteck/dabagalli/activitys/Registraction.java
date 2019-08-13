@@ -47,7 +47,7 @@ public class Registraction extends AppCompatActivity implements AdapterView.OnIt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);  spinnerModels =new ArrayList<>();
         spinnerModels.add(new SpinnerModel("","-- Select Location --"));
-
+        Toast.makeText(Registraction.this, "haiii", Toast.LENGTH_SHORT).show();
         locatonData();
 
         sharedPreference=new SharedPreference();
