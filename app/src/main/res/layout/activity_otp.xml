@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.Otp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+        <ImageView
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:src="@drawable/logomain" />
+        <LinearLayout
+            android:orientation="vertical"
+           android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:inputType="number"
+                android:id="@+id/otp_value"
+                android:fontFamily="@font/one"
+                android:paddingLeft="150dp"
+                android:drawablePadding="10dp"
+                android:hint="otp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+            <Button
+                android:fontFamily="@font/one"
+                android:id="@+id/otp"
+                android:background="@color/blue"
+                android:textColor="@color/white"
+                android:text="Enter"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

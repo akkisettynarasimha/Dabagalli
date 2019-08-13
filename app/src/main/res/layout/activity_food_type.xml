@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.FoodType">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundone">
+
+        <ImageView
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:src="@drawable/logotwo" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/food_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--
+<android.support.v7.widget.CardView
+android:id="@+id/card2"
+android:layout_margin="10dp"
+android:layout_width="match_parent"
+android:layout_height="80dp"
+app:cardCornerRadius="10dp"
+app:cardElevation="5dp">
+<TextView
+    android:textColor="@color/blue"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:textSize="20dp"
+    android:fontFamily="@font/one"
+    android:text="Non-Veg"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" />
+
+</android.support.v7.widget.CardView>
+<android.support.v7.widget.CardView
+android:id="@+id/card3"
+android:layout_margin="10dp"
+android:layout_width="match_parent"
+android:layout_height="80dp"
+app:cardCornerRadius="10dp"
+app:cardElevation="5dp">
+<TextView
+    android:textColor="@color/blue"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:textSize="20dp"
+    android:fontFamily="@font/one"
+    android:text="Standard Meal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" />
+
+</android.support.v7.widget.CardView>
+-->

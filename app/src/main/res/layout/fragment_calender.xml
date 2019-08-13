@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="#F0E9E9">
+
+       <!-- <ImageView
+
+            android:id="@+id/image_back"
+
+            android:layout_width="30dp"
+
+            android:layout_height="20dp"
+
+            android:layout_marginLeft="20dp"
+
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+
+            android:text="Job Detail"
+
+            android:textColor="@android:color/white"
+
+            android:textSize="17dp"
+
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/text_today"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center|right"
+
+            android:padding="10dp"
+
+            android:text="Today"
+
+            android:textColor="@android:color/white"
+
+            android:textSize="15dp" />-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:src="@drawable/logotwo"/>
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+
+                    android:layout_toLeftOf="@+id/cart"
+                    android:layout_margin="5dp"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/notification"/>
+                <ImageView
+                    android:id="@+id/cart"
+                    android:layout_margin="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cart"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="400dp"
+
+        android:layout_margin="10dp"
+
+        android:background="@drawable/layout_shape"
+
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:id="@+id/layout_right"
+
+                android:layout_width="40dp"
+
+                android:layout_height="match_parent"
+
+                android:gravity="center">
+
+                <ImageView
+
+                    android:layout_width="20dp"
+
+                    android:layout_height="20dp"
+
+                    android:background="@drawable/ic_chevron_left_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+
+                android:gravity="center">
+
+                <TextView
+
+                    android:id="@+id/text"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+
+                    android:text="Date"
+
+                    android:textColor="@color/blue"
+
+                    android:textSize="17dp"
+
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/layout_left"
+
+                android:layout_width="40dp"
+
+                android:layout_height="match_parent"
+
+                android:gravity="center">
+
+                <ImageView
+
+                    android:layout_width="20dp"
+
+                    android:layout_height="20dp"
+
+                    android:background="@drawable/ic_chevron_right_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+
+            android:background="@color/blue" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.2">
+            <com.github.sundeepk.compactcalendarview.CompactCalendarView
+
+                android:id="@+id/compactcalendar_view"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="320dp"
+
+                android:layout_margin="5dp"
+
+                app:compactCalendarBackgroundColor="@android:color/white"
+
+                app:compactCalendarCurrentDayBackgroundColor="@color/blue"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="@color/blue"
+                app:compactCalendarMultiEventIndicatorColor="@color/blue"
+                app:compactCalendarTargetHeight="360dp"
+
+                app:compactCalendarTextColor="@android:color/black"
+
+                app:compactCalendarTextSize="15dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

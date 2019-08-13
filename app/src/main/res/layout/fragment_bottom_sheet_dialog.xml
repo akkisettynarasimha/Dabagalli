@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+   >
+
+    <!-- NOTE: This list should be displayed in a list
+    instead of nested layouts -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#44D7E0D7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Rice"
+                    android:theme="@style/checkBoxComponent"
+                    android:textColorHint="@color/blue"
+                    android:textColor="@color/blue"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/one"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="left|center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="left|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:theme="@style/checkBoxComponent"
+                    android:textColorHint="@color/blue"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/one"
+                    android:textColor="@color/blue"
+                    android:gravity="left|center"
+                    android:text="@string/quantity"/>
+                <RadioGroup
+                    android:theme="@style/checkBoxComponent"
+                    android:textColorHint="@color/blue"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:weightSum="1"
+                    android:gravity="left|center"
+                    android:id="@+id/radioGroup">
+
+                    <RadioButton
+                        android:theme="@style/checkBoxComponent"
+                        android:textColorHint="@color/blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/one"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/radioButton"
+                        android:gravity="left|center"
+                        android:checked="false"
+                      />
+
+                    <RadioButton
+                        android:theme="@style/checkBoxComponent"
+                        android:textColorHint="@color/blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/one"
+                        android:textColor="@color/blue"
+                        android:id="@+id/radioButton2"
+                        android:gravity="left|center"
+                        android:checked="false"
+                        android:layout_marginLeft="40dp"
+                        android:layout_weight="0.13" />
+                </RadioGroup>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/blue"
+                android:layout_height="2dp"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="left|center"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:theme="@style/checkBoxComponent"
+                    android:textColorHint="@color/blue"
+                    android:id="@+id/selected_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/one"
+                    android:textSize="20dp"
+                    android:textColor="@color/blue"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="left|center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/proceed_to_go"
+                    android:fontFamily="@font/one"
+                    android:background="@drawable/proceed_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="#ffffff"
+                    android:text="Proceed"
+                    android:textSize="20dp"
+                    android:gravity="center">
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+</LinearLayout>

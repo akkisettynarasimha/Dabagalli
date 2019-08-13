@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Dabagalli</string>
+    <string name="max_orders">* Minimun 4 boxes to be selected to create a box</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_location">Location</string>
+
+    <string name="meals">Your Per Meal Cost As Per Selection is</string>
+    <string name="amount">RS 85/-</string>
+    <string name="quantity">* Quantity</string>
+    <string-array name="SelectArea">
+        <item>Select Meals Per Week</item>
+        <item> 5 Days Per Week </item>
+        <item> 6 Days Per Week  </item>
+
+    </string-array>
+</resources>

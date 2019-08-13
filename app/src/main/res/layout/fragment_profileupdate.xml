@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/blue"
+                android:id="@+id/shoipping_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_shape"
+                android:fontFamily="@font/one"
+                android:hint="Name"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:textSize="15dp" />
+            <TextView
+                android:textColor="@color/blue"
+                android:id="@+id/shoipping_email"
+                android:fontFamily="@font/one"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_shape"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email"/>
+            <TextView
+                android:textColor="@color/blue"
+                android:id="@+id/shoipping_phone"
+                android:fontFamily="@font/one"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_shape"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Phone"/>
+            <TextView
+                android:textColor="@color/blue"
+                android:id="@+id/shoipping_location"
+                android:fontFamily="@font/one"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_shape"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Location"/>
+            <EditText
+                android:textColor="@color/blue"
+                android:id="@+id/shoipping_state"
+                android:fontFamily="@font/one"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_shape"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Address 1"/>
+            <EditText
+                android:textColor="@color/blue"
+                android:id="@+id/shopping_address"
+                android:fontFamily="@font/one"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_shape"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Address 2"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:fontFamily="@font/one"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/blue"
+            android:text="Continue"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

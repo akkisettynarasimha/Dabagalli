@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundone">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="8">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:fontFamily="@font/one"
+                android:layout_margin="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To create a mealbox you should select minimum 2 boxes"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/products"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="true">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Total Price :"
+            android:fontFamily="@font/one"
+            android:textColor="@color/blue"
+            android:textSize="20dp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="25.00"
+            android:fontFamily="@font/one"
+            android:textColor="@color/blue"
+            android:textSize="20dp"/>
+        <Spinner
+
+            android:background="@drawable/edittextshape"
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/one"
+            android:layout_marginRight="15dp"
+
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/blue"
+            android:entries="@array/SelectArea"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+
+                android:textAllCaps="true"
+                android:id="@+id/vieworders"
+                android:fontFamily="@font/one"
+                android:background="@drawable/border_shape"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:text="VIEW ORDERS"
+                android:gravity="center">
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

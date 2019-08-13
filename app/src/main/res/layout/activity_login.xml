@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.Registraction">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <ImageView
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:src="@drawable/logomain" />
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+
+                android:background="@drawable/spinner_shape"
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/one"
+
+                android:drawableLeft="@drawable/ic_profile_image"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/blue"
+                />
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/reg_name"
+                android:fontFamily="@font/one"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_profile_image"
+                android:hint="@string/hint_name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/reg_email"
+                android:fontFamily="@font/one"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_mail_register"
+                android:hint="E-Mail"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <EditText
+                android:inputType="number"
+                android:singleLine="true"
+                android:id="@+id/reg_phone"
+                android:fontFamily="@font/one"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_phone_register"
+                android:hint="Phone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/reg_password"
+                android:fontFamily="@font/one"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_lock_register"
+                android:hint="Password"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Button
+
+                android:fontFamily="@font/one"
+                android:id="@+id/login"
+                android:background="@color/blue"
+                android:textColor="@color/white"
+                android:text="Enter"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

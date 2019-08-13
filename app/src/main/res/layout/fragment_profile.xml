@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundone">
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:fontFamily="@font/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/smile"/>
+        </LinearLayout>
+        <View
+            android:layout_margin="5dp"
+            android:background="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/profile_name"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mounika Vallabhani"/>
+            <TextView
+                android:id="@+id/profile_mail"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MounikaVallabhani@gmail.com"/>
+            <TextView
+                android:id="@+id/profile_mobile"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0123456789"/>
+
+        </LinearLayout>
+        <View
+            android:layout_margin="5dp"
+            android:background="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!--    <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_lock_register"/>
+                <LinearLayout
+                    android:id="@+id/passwoed_change"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password Change"
+                        android:textSize="15dp"/>
+                    <View
+                        android:layout_margin="5dp"
+                        android:background="@color/blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_history_black_24dp"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order History"
+                        android:textSize="15dp"/>
+                    <View
+                        android:layout_margin="5dp"
+                        android:background="@color/blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile_image"/>
+                <LinearLayout
+                    android:id="@+id/customersupport"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Customer Support"
+                        android:textSize="15dp"/>
+                    <View
+                        android:layout_margin="5dp"
+                        android:background="@color/blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/one"
+                    android:textColor="@color/white"
+                    android:background="@color/blue"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Logout"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
