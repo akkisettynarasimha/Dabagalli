@@ -29,15 +29,16 @@
         <activity android:name=".activitys.Otp" />
         <activity android:name=".activitys.Registraction" />
         <activity android:name=".activitys.SplashActivity">
-
-        </activity>
-        <activity android:name=".activitys.ForgotPassword" />
-        <activity android:name=".testing.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".activitys.ForgotPassword" />
+        <activity android:name=".testing.MainActivity">
+
         </activity>
     </application>
 
