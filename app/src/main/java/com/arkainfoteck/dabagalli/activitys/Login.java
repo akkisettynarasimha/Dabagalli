@@ -72,7 +72,6 @@ public class Login extends AppCompatActivity {
                 }else {
                     login_name.requestFocus();
                     login_name.setError("Enter Proper details ");
-
                 }
 
             }
