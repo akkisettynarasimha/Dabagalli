@@ -24,6 +24,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -38,6 +39,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.arkainfoteck.dabagalli.RecyclerviewAdopterOnclick;
+import com.arkainfoteck.dabagalli.activitys.AddToCart;
 import com.arkainfoteck.dabagalli.adopters.FoodAdopter;
 import com.arkainfoteck.dabagalli.adopters.FoodItemsAdopter;
 import com.arkainfoteck.dabagalli.database.SharedPreference;
@@ -48,6 +50,7 @@ import com.arkainfoteck.dabagalli.models.FooditemsModel;
 import com.arkainfoteck.dabagalli.activitys.LunchScreen;
 import com.arkainfoteck.dabagalli.R;
 import com.arkainfoteck.dabagalli.database.CartDatabse;
+import com.arkainfoteck.dabagalli.testing.MainActivity;
 
 
 import org.json.JSONArray;
@@ -95,6 +98,7 @@ public class DetailsFragment extends Fragment{
 
     Context context;
     LinearLayout with_internet,without_internet;
+    ImageView cart;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -102,6 +106,17 @@ public class DetailsFragment extends Fragment{
 
         without_internet=view.findViewById(R.id.without_internet);
         with_internet=view.findViewById(R.id.with_internet);
+
+        // card items
+        cart=view.findViewById(R.id.cart);
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(getContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // cards items
         fooditems = view.findViewById(R.id.fooditems);

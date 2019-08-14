@@ -17,20 +17,13 @@ public class Main_Home extends Fragment {
     View view;
     Fragment fragment;
 
-     ImageView cart;
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_main, container, false);
-        cart=(ImageView)view.findViewById(R.id.cart);
-        cart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getContext(),MainActivity.class);
-               getContext().startActivity(intent);
-            }
-        });
+
         fragment=new Home();
         getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment,new Home()).commit();
 
